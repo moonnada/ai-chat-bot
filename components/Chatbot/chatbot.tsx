@@ -79,8 +79,7 @@ export default function Chatbot() {
                     <div className="flex flex-col h-full">
                         {/* CHAT HEADER  */}
                         <div>
-                            <h2 className="font-semibold text-lg tracking-tight">Chatbot</h2>
-                            <p>Powered by OpenAI</p>
+                            <h2 className="font-semibold text-lg tracking-tight">Feel free to ask any question</h2>
                         </div>
 
                         {/* CHAT CONTAINER  */}

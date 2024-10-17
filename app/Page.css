@@ -1,0 +1,15 @@
+/* Home.css */
+
+h1 {
+    font-size: 80px;
+    /* Make the title bigger */
+    color: #fff;
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-align: center;
+    /* Center-align the title */
+}

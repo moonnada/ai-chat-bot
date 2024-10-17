@@ -1,0 +1,21 @@
+.animated-title {
+    font-size: 3rem;
+    /* Adjust the size as needed */
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.letter {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
