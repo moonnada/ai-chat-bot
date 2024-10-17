@@ -46,17 +46,9 @@ export default function Chatbot() {
             const res = await chatCompletion([...chatMessages, newMessage]);
 
             console.log("RESPONSE", res);
-            // Handle response
-            if (res?.choices[0]?.message) {
-                setUserMessage("");
+            setUserMessage("");
+            setMessages(prevMessages => [...prevMessages, res]);
 
-                const assistantMessage: Message = {
-                    content: res.choices[0].message.content as string,
-                    role: "assistant",
-                };
-
-                setMessages(prevMessages => [...prevMessages, assistantMessage]);
-            }
         } catch (error) {
             console.log("API Error", error);
         } finally {
