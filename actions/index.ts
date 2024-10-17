@@ -3,6 +3,10 @@ import OpenAI from "openai";
 import { Message } from "@/components/Chatbot/chatbot";
 import fs from 'fs';
 import path from 'path';
+import dotenv from 'dotenv';
+
+// Load environment variables from .env.local
+dotenv.config({ path: '.env.local' });
 
 const openAI = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY
